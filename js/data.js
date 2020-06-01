@@ -14,16 +14,29 @@ const account = [
 ];
 
 const monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  { id: 1, name: "January" },
+  { id: 2, name: "February" },
+  { id: 3, name: "March" },
+  { id: 4, name: "April" },
+  { id: 5, name: "May" },
+  { id: 6, name: "June" },
+  { id: 7, name: "July" },
+  { id: 8, name: "August" },
+  { id: 9, name: "September" },
+  { id: 10, name: "October" },
+  { id: 11, name: "November" },
+  { id: 12, name: "December" },
 ];
+
+function renderTableRow(data, monthNames) {
+  let HTML = "";
+  for (let i = 0; i < monthNames.length; i++) {
+    let income = 0;
+    let expense = 0;
+    let balance = 0;
+    for (let f = 0; f < data.length; f++) {
+      if (data[f].month === monthNames[i].id) {
+
+  }
+  document.querySelector(".table-content").innerHTML = HTML;
+}
